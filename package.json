@@ -1,0 +1,22 @@
+{
+  "name": "trace-anything",
+  "description": "Shim and trace calls to absolutely anything",
+  "version": "1.0.0",
+  "homepage": "https://github.com/joeyparrish/trace-anything",
+  "author": "Joey Parrish",
+  "maintainers": [
+    {
+      "name": "Joey Parrish",
+      "email": "joeyparrish@google.com"
+    }
+  ],
+  "main": "trace-anything.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeyparrish/trace-anything.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joeyparrish/trace-anything/issues"
+  },
+  "license": "Apache-2.0"
+}
