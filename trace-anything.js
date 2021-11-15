@@ -1140,4 +1140,8 @@ TraceAnything._newElementObserver = null;
  */
 TraceAnything._nextGeneratedId = new Map();
 
-exports = {TraceAnything};
+// In a nodejs environment, export the module.  In a browser, don't.
+// See https://github.com/google/eme_logger/issues/25
+if (typeof module !== 'undefined') {
+  module.exports = {TraceAnything};
+}
