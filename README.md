@@ -7,3 +7,4 @@ and template strings.  This should work in all modern browsers (all browsers
 whose names do not rhyme with Splinter-Wet Deplorer) and in nodejs.
 
 Available via npm as `trace-anything`.
+
