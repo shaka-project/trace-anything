@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/shaka-project/trace-anything/compare/v1.0.1...v1.0.2) (2022-06-23)
+
+
+### Bug Fixes
+
+* missing parameter `options` in `_shimPropertySilent()` ([#10](https://github.com/shaka-project/trace-anything/issues/10)) ([b7fa653](https://github.com/shaka-project/trace-anything/commit/b7fa653d5f1eb7aa234354ac98cac8ef9a335871))
+
 ## [1.0.1](https://github.com/shaka-project/trace-anything/compare/v1.0.1...v1.0.0) (2021-11-15)
 
 ### Bug Fixes
