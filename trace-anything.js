@@ -311,7 +311,7 @@ class TraceAnything {
       if (options.methods) {
         TraceAnything._shimMethod(traced, object, k, className, options);
       } else {
-        TraceAnything._shimPropertySilent(traced, object, k);
+        TraceAnything._shimPropertySilent(traced, object, k, options);
       }
     } else if (options.properties && options.treatPromisePropertiesAsEvents &&
                object[k] && object[k].then) {
@@ -320,7 +320,7 @@ class TraceAnything {
       if (options.properties) {
         TraceAnything._shimProperty(traced, object, k, className, options);
       } else {
-        TraceAnything._shimPropertySilent(traced, object, k);
+        TraceAnything._shimPropertySilent(traced, object, k, options);
       }
     }
   }
@@ -618,9 +618,10 @@ class TraceAnything {
    * @param {!Object} traced The traced object.
    * @param {!Object} object The original object.
    * @param {string} k The member name.
+   * @param {TraceAnything.Options} options
    * @private
    */
-  static _shimPropertySilent(traced, object, k) {
+  static _shimPropertySilent(traced, object, k, options) {
     if (options.inPlace) {
       // If we're shimming the object in-place, we don't need a "silent" shim.
       // That is only needed for constructing a new traced object to take the
