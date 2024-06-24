@@ -126,7 +126,8 @@ class TraceAnything {
 
     if (options.events) {
       // Shim any "on" event listener properties.
-      for (const k of allProperties.filter((k) => k.startsWith('on'))) {
+      for (const k of allProperties.filter(
+        (k) => (k.startsWith('on')) && object.hasOwnProperty(k))) {
         TraceAnything._shimEventListenerProperty(
             traced, object, k, className, options);
       }
