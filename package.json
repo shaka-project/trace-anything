@@ -1,7 +1,7 @@
 {
   "name": "trace-anything",
   "description": "Shim and trace calls to absolutely anything",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "https://github.com/shaka-project/trace-anything",
   "author": "Joey Parrish",
   "maintainers": [
